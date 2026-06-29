@@ -5,11 +5,13 @@ import { ArrowRight, Sparkles } from "lucide-react";
 import { Disclaimer } from "@/components/Disclaimer";
 
 export default function HomePage() {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
   return (
     <main className="mx-auto flex min-h-dvh w-full max-w-[480px] flex-col gap-5 px-4 pb-6 pt-4">
       <section className="relative min-h-[430px] overflow-hidden rounded-[28px] bg-white shadow-soft">
         <img
-          src="/images/today-gauge-hero.png"
+          src={`${basePath}/images/today-gauge-hero.png`}
           alt="親子がスマホで今日の気持ちを確認しているやさしいイラスト"
           className="absolute inset-0 h-full w-full object-cover"
         />
