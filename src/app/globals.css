@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background: #fffdf8;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  background: #fffdf8;
+  color: #2f3440;
+}
+
+button,
+textarea {
+  font: inherit;
+}
